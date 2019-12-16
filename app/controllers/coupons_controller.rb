@@ -8,6 +8,9 @@ class CouponsController < ApplicationController
     @coupon = Coupon.find(params[:id])
   end
   
+  def new
+  end
+  
   def create
     @coupon = Coupon.new
     @student.first_name = params[:first_name]
