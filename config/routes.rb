@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :coupons
-  get '/coupons/:id', to: 'coupons#show', as: 'coupon'
+  # resources :coupons, only: [:index, :new, :create]
+  # get '/coupons/:id', to: 'coupons#show', as: 'coupon'
 end
